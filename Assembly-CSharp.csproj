@@ -63,9 +63,14 @@
   <ItemGroup>
     <Compile Include="Assets\Sripts\CharacterController2D.cs" />
     <Compile Include="Assets\Sripts\enemyMove.cs" />
+    <Compile Include="Assets\Sripts\GlobalControl.cs" />
     <Compile Include="Assets\Sripts\killPlayer.cs" />
     <Compile Include="Assets\Sripts\PlayerMovement.cs" />
     <Compile Include="Assets\Sripts\powerUp.cs" />
+    <Compile Include="Assets\Sripts\restart.cs" />
+    <Compile Include="Assets\Sripts\Timer.cs" />
+    <Compile Include="Assets\Sripts\win.cs" />
+    <Compile Include="Assets\Sripts\winTime.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/unity ting ting/2D-Movement-master/2D-Movement-master/2D Movement/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -80,6 +85,12 @@
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>D:/unity ting ting/2D-Movement-master/2D-Movement-master/2D Movement/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>D:/unity ting ting/2D-Movement-master/2D-Movement-master/2D Movement/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>D:/unity ting ting/2D-Movement-master/2D-Movement-master/2D Movement/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour {
 
 	public float runSpeed = 40f;
 
+    public float jumpSpeed1= 700;
+
 	float horizontalMove = 0f;
 	bool jump = false;
 	bool crouch = false;
@@ -56,10 +58,15 @@ public class PlayerMovement : MonoBehaviour {
     {
         runSpeed += amount;
     }
-   
+
+    public void jumpUp(float amount)
+    {
+        jumpSpeed1 += amount;
+    }
+
     public void RestartGame()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name); // loads current scene
+            SceneManager.LoadScene("youDied"); // loads current scene
         }
     
 }

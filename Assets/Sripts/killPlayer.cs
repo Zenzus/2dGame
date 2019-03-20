@@ -6,6 +6,8 @@ public class killPlayer : MonoBehaviour
 {
 
     public GameObject player;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +19,9 @@ public class killPlayer : MonoBehaviour
      
         {
             if (other.gameObject.CompareTag("Player"))
-            {   
+            {
 
-
+               
                 player.GetComponent<PlayerMovement>().RestartGame();
                // Destroy(other.gameObject); // this destroys the bullet
 

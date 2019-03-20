@@ -7,7 +7,9 @@ public class powerUp : MonoBehaviour
     public GameObject player;
     public GameObject speedEagle;
     public float speed;
+    public float jumpSpeed;
     bool isTrigger = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +25,7 @@ public class powerUp : MonoBehaviour
             {
                 speedEagle.GetComponent<SpriteRenderer>().enabled = true;
                 player.GetComponent<PlayerMovement>().speedUp(speed);
+                player.GetComponent<CharacterController2D>().jumpUp(jumpSpeed);
                 Destroy(gameObject); // this destroys the bullet
 
             }
